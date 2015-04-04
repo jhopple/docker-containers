@@ -14,9 +14,15 @@
   <Privileged>true</Privileged>
   <Networking>
     <Mode>bridge</Mode>
-    <Publish/>
-  </Networking>
-  <Environment/>
+    <Publish>
+      <Port>
+        <HostPort>497</HostPort>
+        <ContainerPort>497</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>  
+ <Environment/>
   <Data>
     <Volume>
       <HostDir>/mnt</HostDir>
