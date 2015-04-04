@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <Name>Retrospect Client</Name>
+  <Description>
+    Retrospect is one of the most trusted names when it comes to cross-platform backups.  This Docker will download and install the client application from their website and when run, enables fast efficient backups.  This does require a licensed Retrospect server to function properly.[br][br]
+    [b][span style='color: #E80000;']Directions:[/span][/b][br]
+    [b]Password[/b] : The default password is '12345'.  At the moment this is set during install.  A process on changing it is coming soon.[br][br]
+    [b]Tip:[/b] Volume mappings need to be enabled to backup data from UnRaid.
+  </Description>
+  <Registry>https://registry.hub.docker.com/u/navvy144/retro/</Registry>
+  <GitHub>https://github.com/navvy144/retro</GitHub>
+  <Repository>navvy144/retro</Repository>
+  <BindTime>true</BindTime>
+  <Privileged>true</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish/>
+  </Networking>
+  <Environment/>
+  <Data>
+    <Volume>
+      <HostDir>/mnt</HostDir>
+      <ContainerDir>/mnt</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Icon>http://download.retrospect.com/site/cube_128.png</Icon>
+</Containers>
